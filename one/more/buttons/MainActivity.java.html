@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainActivity.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>one.more.buttons;
+
+<span class="s0">import </span>androidx.appcompat.app.AppCompatActivity;
+
+<span class="s0">import </span>android.graphics.Color;
+<span class="s0">import </span>android.os.Bundle;
+<span class="s0">import </span>android.view.View;
+<span class="s0">import </span>android.widget.Button;
+
+<span class="s0">import static </span>one.more.buttons.R.color.grey;
+<span class="s0">import static </span>one.more.buttons.R.color.orang;
+
+<span class="s0">public class  </span>MainActivity <span class="s0">extends </span>AppCompatActivity {
+
+    View view;
+
+    @Override
+    <span class="s0">protected void </span>onCreate(Bundle savedInstanceState) {
+        <span class="s0">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        view=<span class="s0">this</span>.getWindow().getDecorView();
+        view.setBackgroundResource(grey);
+
+            }
+
+            <span class="s0">public void </span>goSex(View v)
+            {
+                view.setBackgroundResource(R.color.sex);
+
+            }
+
+    <span class="s0">public void </span>goSmart(View v)
+    {
+
+        view.setBackgroundResource(R.color.marin);
+
+    }
+
+    <span class="s0">public void </span>goVegan(View v)
+    {
+
+        view.setBackgroundResource(R.color.salad);
+
+
+    }
+
+    <span class="s0">public void </span>goHot(View v)
+    {
+
+        view.setBackgroundResource(R.color.orang);
+
+    }
+
+}</pre>
+</body>
+</html>
